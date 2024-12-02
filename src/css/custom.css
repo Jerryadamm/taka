@@ -1,0 +1,163 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #ff6b35;
+  --ifm-color-primary-dark: #ff6b35;
+  --ifm-color-primary-darker: #ff6b35;
+  --ifm-color-primary-darkest: #ff6b35;
+  --ifm-color-primary-light: #ff6b35;
+  --ifm-color-primary-lighter: #ff6b35;
+  --ifm-color-primary-lightest: #ff6b35;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] .navbar__brand img {
+    content: url('/img/Logo_TAKA_putih.svg');
+  --ifm-color-primary: #ff6b35;
+  --ifm-color-primary-dark: #ff6b35;
+  --ifm-color-primary-darker: #ff6b35;
+  --ifm-color-primary-darkest: #ff6b35;
+  --ifm-color-primary-light: #ff6b35;
+  --ifm-color-primary-lighter: #ff6b35;
+  --ifm-color-primary-lightest: #ff6b35;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Untuk header bar */
+.navbar {
+  font-size: 16px;
+}
+
+/* Untuk sidebar links */
+.menu__link {
+  font-size: 13px; /* Ganti dengan ukuran yang diinginkan */
+}
+
+/* Untuk daftar menu di sidebar */
+.menu__list {
+  font-size: 13px;
+}
+
+ul {
+  list-style-type: none;  /* Menghilangkan bullets */
+  padding-left: 0;        /* Menghilangkan indentasi */
+}
+
+li {
+  text-align: left;       /* Menjaga agar teks rata kiri */
+}
+
+.feature-title {
+  display: flex;
+  align-items: center;  /* Agar gambar dan teks sejajar */
+  text-align: left;      /* Rata kiri */
+}
+
+.feature-title img {
+  margin-right: 6px;     /* Memberikan jarak antara logo dan teks */
+}
+
+:root {
+  --navbar-logo-light: url('/img/Logo_TAKA.svg');
+}
+
+.navbar__brand img {
+  content: var(--navbar-logo-light);
+}
+
+html[data-theme='dark'] .navbar__brand img {
+  content: url('/img/Logo_TAKA_putih.svg');
+}
+
+/* Menyesuaikan ukuran panah di sidebar */
+.theme-doc-sidebar-item-toggle::after,
+.menu__link--sublist-caret::after {
+  font-size: 6px !important;
+  vertical-align: middle !important;
+  transform: rotate(90deg) scale(0.6) !important; /* Default: mengarah ke kanan */
+}
+
+/* Ketika menu dibuka */
+.theme-doc-sidebar-item-category[class*="menu__list-item"] > .menu__list-item-collapsible > .menu__link--sublist-caret[aria-expanded="true"]::after {
+  transform: rotate(180deg) scale(0.6) !important; /* Mengarah ke bawah saat expanded */
+}
+
+/* Memastikan semua dropdown mengikuti aturan yang sama */
+.menu__link--sublist-caret[aria-expanded="true"]::after {
+  transform: rotate(180deg) scale(0.6) !important;
+}
+
+/* Style untuk search container */
+.search-container {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.search-button {
+  padding: 12px 24px;
+  background-color: white;
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.search-button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+  background-image: url('/img/header-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 300px; /* Sesuaikan dengan kebutuhan */
+}
+
+/* Styling untuk search box Algolia */
+.DocSearch-Button {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 4px;
+  background: var(--ifm-background-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  transition: all var(--ifm-transition-fast);
+}
+
+.DocSearch-Button:hover {
+  background: var(--ifm-hover-overlay);
+  box-shadow: var(--ifm-global-shadow-lw);
+}
+
+.DocSearch-Button-Keys {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
