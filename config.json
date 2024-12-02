@@ -1,5 +1,5 @@
 {
-  "index_name": "YOUR_INDEX_NAME",
+  "index_name": "taka",
   "start_urls": ["https://your-site.com/"],
   "sitemap_urls": ["https://your-site.com/sitemap.xml"],
   "sitemap_alternate_links": true,
