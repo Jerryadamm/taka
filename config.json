@@ -1,7 +1,7 @@
 {
   "index_name": "taka",
-  "start_urls": ["https://your-site.com/"],
-  "sitemap_urls": ["https://your-site.com/sitemap.xml"],
+  "start_urls": ["http://localhost:3001/"],
+  "sitemap_urls": ["http://localhost:3001/sitemap.xml"],
   "sitemap_alternate_links": true,
   "stop_urls": [],
   "selectors": {
