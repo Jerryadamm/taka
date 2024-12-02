@@ -104,9 +104,9 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
       algolia: {
-        appId: 'YOUR_APP_ID', // Ganti dengan App ID Anda
-        apiKey: 'YOUR_SEARCH_API_KEY', // Ganti dengan Search API Key Anda
-        indexName: 'YOUR_INDEX_NAME', // Ganti dengan nama index Anda
+        appId: '5XCPB9D390',
+        apiKey: 'c93326e3ac096e8bae899a8a448e4dd1',
+        indexName: 'taka',
         contextualSearch: true,
         searchParameters: {
           facetFilters: ['language:en'], // Opsional: filter berdasarkan bahasa
